@@ -7,15 +7,16 @@ const AnalyticsDashboard = () => {
     <div className="flex flex-col items-center align-center ">
       <h1 className="pb-10">Bengo Analytics</h1>
       <div className="flex items-start justify-around custom-width">
-        <div className="list-anlysis">
-          <MostFrequientQueries />
+        <div className="column-anlysis">
+          <SearchesByHourInWeek />
         </div>
+
         <div className="bar-anlysis">
           <TrendingKeywords limit={15} />
         </div>
       </div>
-      <div className="column-anlysis">
-        <SearchesByHourInWeek />
+      <div className="list-anlysis">
+        <MostFrequientQueries />
       </div>
     </div>
   );
