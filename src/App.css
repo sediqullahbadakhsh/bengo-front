@@ -3,9 +3,7 @@
 @tailwind utilities;
 
 #root {
-  max-width: 1280px;
   margin: 0 auto;
-  padding: 2rem;
   text-align: center;
 }
 
@@ -23,6 +21,12 @@
     animation: logo-spin infinite 20s linear;
   }
 }
+.app {
+  padding: 20px;
+}
+.custom-width {
+  width: calc(100vw - 60px);
+}
 
 .card {
   padding: 2em;
@@ -30,4 +34,11 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.list-anlysis,
+.bar-anlysis {
+  /* background-color: aliceblue; */
+  color: black;
+  width: 49%;
 }

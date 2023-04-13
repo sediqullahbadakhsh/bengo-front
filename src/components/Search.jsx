@@ -43,17 +43,17 @@ const Search = () => {
   };
 
   return (
-    <div class="min-w-full w-72 mx-auto">
+    <div className="min-w-full w-72 mx-auto">
       <h1 className="pb-6">Bengo</h1>
 
       <form
         onSubmit={handleSubmit}
-        class="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden"
+        className="relative flex items-center w-full h-12 rounded-lg focus-within:shadow-lg bg-white overflow-hidden"
       >
-        <div class="grid place-items-center h-full w-12 text-gray-300">
+        <div className="grid place-items-center h-full w-12 text-gray-300">
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            class="h-6 w-6"
+            className="h-6 w-6"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -67,7 +67,7 @@ const Search = () => {
           </svg>
         </div>
         <input
-          class="peer h-full w-full outline-none text-sm text-white-700 pr-2 pl-4"
+          className="peer h-full w-full outline-none text-sm text-white-700 pr-2 pl-4"
           type="text"
           name="query"
           value={query}
