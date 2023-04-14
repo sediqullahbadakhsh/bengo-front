@@ -5,7 +5,9 @@ import fetchIpAddress from "../tools/fetchIpAddress";
 
 export const searchApi = createApi({
   reducerPath: "searchApi",
-  baseQuery: fetchBaseQuery({ baseUrl: "http://localhost:3000/api/v1" }),
+  baseQuery: fetchBaseQuery({
+    baseUrl: "https://bengo.onrender.com/api/v1",
+  }),
   endpoints: (builder) => ({
     search: builder.query({
       providesTags: (result, error, args) => {
@@ -21,15 +23,18 @@ export const searchApi = createApi({
     createQuery: builder.mutation({
       queryFn: async (query) => {
         const ipAddress = await fetchIpAddress();
-        const response = await fetch("http://localhost:3000/api/v1/search", {
-          method: "POST",
-          headers: {
-            "Content-Type": "application/json",
-          },
-          body: JSON.stringify({
-            search_query: { query: query.query, ip_address: ipAddress },
-          }),
-        });
+        const response = await fetch(
+          "https://bengo.onrender.com/api/v1/search",
+          {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              search_query: { query: query.query, ip_address: ipAddress },
+            }),
+          }
+        );
 
         const data = await response.json();
         return { data };
