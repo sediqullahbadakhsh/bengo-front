@@ -27,7 +27,7 @@ Bengo Search Engine is a web application built with React and Ruby on Rails. It 
 
 ## API Integration
 
-This app integrates with a RESTful API that provides search query data. The API documentation can be found at `http://localhost:3000/api-docs`.
+This app integrates with a RESTful API that provides search query data. The API documentation can be found at `https://www.bengo.onrender.com/api-docs`.
 
 ## Installation
 
@@ -36,3 +36,5 @@ To get started with Bengo Search Engin, follow these steps:
 1. Clone the repository from GitHub : `git clone https://github.com/sediqullahbadakhsh/bengo-front.git`
 2. Install the dependencies: `npm install`
 3. start the development server: `npm run dev`
+
+**If you liked this project please don't forget to put a stare**
